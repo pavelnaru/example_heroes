@@ -1,15 +1,53 @@
-<h2>My heroes:</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <!-- <base href="/"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+	<h2>My heroes:</h2>
+	<ul class="heroes">
+		<li *ngFor= "let hero of heroes">
+			<span routerLink="/detail/{{hero.id}}">
+				<span class="badge">{{hero.id}}</span>{{hero.name}}
+			</span>
+		</li>
+	<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+	</ul>
+<!-- 	<div *ngIf="selectedHero">
+		<p>
+		  {{selectedHero.name}} is here. Heroes work!
+		</p>
+
+		<h2>{{selectedHero.name | uppercase}}</h2>
+		<p>Details:</p>
+		<div><span>id: </span>{{selectedHero.id}}</div>
+		<div>
+		  <label>name:
+		    <input [(ngModel)]="selectedHero.name" placeholder="name">
+		  </label>
+		</div>
+	</div> -->
+</body>
+
+
+<!-- <h2>My heroes:</h2>
 <ul class="heroes">
-	<li *ngFor= "let hero of heroes" 
+	<li *ngFor= "let hero of heroes"
 		[class.selected]="hero === selectedHero"
 		(click)="onSelect(hero)">
 		<span class="badge">{{hero.id}}</span>{{hero.name}}
 	</li>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
-<!-- </ul><div *ngIf="selectedHero">
+</ul><div *ngIf="selectedHero">
 	<p>
-	  {{selectedHero.name}} is here. Heroes works! 
+	  {{selectedHero.name}} is here. Heroes works!
 	</p>
 
 	<h2>{{selectedHero.name | uppercase}}</h2>
@@ -21,5 +59,6 @@
 	  </label>
 	</div>
 
-	
-</div> -->
+
+</div>
+ -->

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     font-family: Comfortaa;
+    text-decoration: none;
+
 }
 footer{
 	margin: 20px 0px 0px 20px;
