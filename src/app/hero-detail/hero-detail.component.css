@@ -1,0 +1,17 @@
+input{
+	/*margin: 0.1em 0 2em;*/
+	font-family: 'Space Mono';
+	padding: 0 0 0 10px;
+	position: relative;
+	background: #fefabc;
+	border: hidden;
+	width: 20em;
+	height: 1.5em;
+}
+div .divLable{
+	padding: 0.4em 0 0.1em 0;
+	width: 20em;
+}
+div button{
+	margin: 1em 0;
+}
