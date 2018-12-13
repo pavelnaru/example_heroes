@@ -1,8 +1,8 @@
 export class Hero {
-	id : number;
-	name: string;
+  id: number;
+  name: string;
   points: number;
-};
+}
 
 export const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice', points: 1  },
@@ -15,4 +15,4 @@ export const HEROES: Hero[] = [
   { id: 45, name: 'Dr IQ', points: 1000 },
   { id: 9, name: 'Magma', points: 12222000 },
   { id: 20, name: 'Tornado', points: 90000 },
-];
+]
